@@ -6,11 +6,11 @@ int main()
 {
     int a, b, multi;
     printf("Enter value of a: ");
-    scanf("%lld", &a);
+    scanf("%d", &a);
     printf("Enter value of b: ");
-    scanf("%lld", &b);
+    scanf("%d", &b);
     multi = a * b;
-    printf("Multiply: %lld\n", multi);
+    printf("Multiply: %d\n", multi);
 
     return 0;
 }
