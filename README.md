@@ -4,9 +4,11 @@ Hi there, I'm [Edward] 👋
 Welcome to my GitHub profile! I'm a passionate Computer Science student with a focus on C programming. Here, you'll find my projects, code samples, and contributions.
 
 🚀 About Me
+
 🎓 Currently studying Computer Science.
 💻 Passionate about coding in C and exploring various aspects of computer science.
 📚 Interested in algorithms, data structures, and system programming.
+
 🌟 Always eager to learn new technologies and improve my skills.
 🔧 Skills
 Programming Languages: C, [HTML,CSS,JS,PYTHON]
