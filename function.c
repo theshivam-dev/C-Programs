@@ -7,13 +7,16 @@ int rectangle();  // Functions Declarations
 int circle ();
 int triangle ();
 int square ();
+int print();
 
 int main ()
 {
    rectangle();   // Functions Calling
    circle ();
    triangle();
-   square ();
+   square();
+   print();
+ 
 
 }
 
@@ -66,4 +69,8 @@ int square ()  // Square Function Definition
 
 }
 
+int print()    // print Function Definition
+{
+   printf("This Is a Program For Calculate Areas Made By Snowden \n\n");
+}
 
