@@ -1,4 +1,4 @@
-// This is a program for Find Area of rectangle,circle,triangle and square with user defined function.
+// This is a program for Find Area of rectangle,circle,triangle,rightangle and square with user defined function.
 
 #include <stdio.h>
 #include <math.h>
