@@ -1,21 +1,24 @@
 // This is a program for Find Area of rectangle,circle,triangle and square with user defined function.
 
 #include <stdio.h>
+#include <math.h>
 #define PI 3.14159
 
 int rectangle();  // Functions Declarations
 int circle ();
 int triangle ();
 int square ();
+int rightangle ();
 int print();
 
 int main ()
 {
-   rectangle();   // Functions Calling
+   rectangle ();   // Functions Calling
    circle ();
-   triangle();
-   square();
-   print();
+   triangle ();
+   square ();
+   rightangle ();
+   print ();
  
 
 }
@@ -66,6 +69,22 @@ int square ()  // Square Function Definition
 
    area = side * side;
    printf("Area of a square is : %f \n\n",area);
+
+}
+
+int rightangle ()    // Right Angle Triangle Definition
+{
+   float hypotenuse,h, b, p; 
+   printf("Enter the base of RightAngle Triangle :  ");
+   scanf("%f",&b);
+
+   printf("Enter the perpendicular of RIghtAngle Triangle : ");
+   scanf("%f",&p);
+
+   hypotenuse = b * b + p * p;
+   h = sqrt (hypotenuse);
+
+   printf("The Hypotenuse of Right Angle Triangle is : %f \n\n",h);
 
 }
 
