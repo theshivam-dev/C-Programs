@@ -1,26 +1,24 @@
-// Simple calculator in c program
-
 #include <stdio.h>
 
-int main()
-{
-  float x,y;
-  float add,sub,multi,div;
-  printf("enter first value : ");
-  scanf("%f",&x);
+int main() {
+    char o;
+    int num1,num2;
+    printf("Enter the operator '+' '-' '*' '/' ");
+    scanf("%c",&o);
 
-  printf("enter second value : ");
-  scanf("%f",&y);
+    printf("enter the first number ");
+    scanf("%d",&num1);
 
-  add = x + y;
-  sub = x - y;
-  multi = x * y;
-  div = x / y;
+    printf("enter the second number ");
+    scanf("%d",&num2);
 
-  printf("addition : %f ",add);
-  printf("subtraction : %f ",sub);
-  printf("multiply : %f ",multi);
-  printf("division : %f ",div);
-  
-  return 0;
+if (o=='+') printf("the addition of two numbers is %d",num1+num2);
+
+if (o=='-') printf("the subtraction of two numbers is %d",num1-num2);
+
+if (o=='*') printf("the multiplication of two numbers is %d",num1*num2);
+
+if (o=='/') printf("the division of two numbers is %d",num1/num2);
+
+return 0;
 }
