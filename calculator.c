@@ -1,24 +1,59 @@
+// Calculator program using switch 
 #include <stdio.h>
-
-int main() {
-    char o;
+int main ()
+{
     int num1,num2;
-    printf("Enter the operator '+' '-' '*' '/' ");
-    scanf("%c",&o);
+    float result;
+    char operator;
 
-    printf("enter the first number ");
+    printf("Enter the first number : ");
     scanf("%d",&num1);
-
-    printf("enter the second number ");
+    
+    printf("Enter the second number : ");
     scanf("%d",&num2);
 
-if (o=='+') printf("the addition of two numbers is %d",num1+num2);
+    printf("Enter operator ('+','-','*','/','%%') : ");
+    scanf(" %c",&operator);
 
-if (o=='-') printf("the subtraction of two numbers is %d",num1-num2);
+   switch (operator) {
+   case '+':
+   result = num1 + num2;
+   printf("The addition of two number is : %f",result);
+    break;
 
-if (o=='*') printf("the multiplication of two numbers is %d",num1*num2);
+   case '-':
+   result = num1 - num2;
+   printf("The subtraction of two number is : %f",result);
+    break;
 
-if (o=='/') printf("the division of two numbers is %d",num1/num2);
+   case '*':
+   result = num1 * num2;
+   printf("The multiplication of two number is : %f",result);
+    break;
 
-return 0;
+   case '/':
+   if (num2 == 0)
+   {
+    printf("Division of zero is not allowed");
+   } else {
+   result = num1 / num2;
+   printf("The division of two number is : %f",result);
+    break;
+   }
+
+ case '%':
+   result = num1 % num2;
+   if (num2 == 0)
+   {
+    printf("Division of zero is not allowed");
+   } else {
+   printf("The remainder of two number is : %f",result);
+    break;
+   }
+   
+   default:
+   printf("Choose right operator");
+    break;
+   }   
+   return 0;
 }
