@@ -1,6 +1,6 @@
 # C-Programming
 
-Hi there, I'm [Edward] 👋
+Hi there, I'm [kevin] 👋
 Welcome to my GitHub profile! I'm a passionate Computer Science student with a focus on C programming. Here, you'll find my projects, code samples, and contributions.
 
 🚀 About Me
